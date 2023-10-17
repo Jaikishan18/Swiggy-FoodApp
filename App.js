@@ -1,40 +1,36 @@
-// Manipulate the HTML DOM using Javscript
-// const heading = document.createElement("h1");
-// heading.innerHTML = "Namaste Everyone";
-// const root = document.getElementById("root");
-// root.appendChild(heading);
 
-// Manipulate the HTML DOM using React
 
-// Create nested React Elements
-const heading = React.createElement(
-    "h1",
-    {
-      id: "title",
-      style: {
-        background:"red",
-      },
-      className:"title"
-    },
-    "heading"
-  );
-  const heading1 = React.createElement(
-    "h1",
-    {
-      id: "title",
-    },
-    "heading1"
-  );
-  
-  const container = React.createElement(
-    "div",
-    {
-      id: "container",
-    },
-    [heading, heading1]
-  );
-  
-  // create root using createRoot
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  // passing react element inside root
-  root.render(container);
+import React from "react";
+import ReactDOM from "react-dom/client"
+
+const heading = React.createElement("h3",{id:"heading"},"Jaikishan");
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(heading)
+
+console.log(heading)
+
+// JSX => React.CreateElement(object) ==> Render ==> HTML Element
+     // JSX code is converted into ReactElemnt Code By using Babel 
+     // js compiler or transplier. And that React code is rendered on the DOM and 
+     // it becomes an HTML Element.
+
+     const JsxHeading = (<h1>
+        Its all about JSX
+        </h1>)
+
+        // It is mandatatory to use paranthesis in multiple lines
+        // jsx code. Not Necessary in a single line of jsx code.
+
+     const root = ReactDOM.createRoot(document.getElementById("root"))
+
+     root.render(JsxHeading)
+
+     // React Functional component 
+
+     const headingComponent  = ()=> <h1>It is Namaste react Course</h1>
+
+     const headingComponent2 = () =>{
+      return <h1>It is Namaste React Course</h1>
+     }
