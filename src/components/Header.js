@@ -1,11 +1,11 @@
-import { useState,useContext } from "react"
+import { useState} from "react"
 import { LOGO_URL } from "../utils/constants"
 import { Link } from "react-router-dom"
 import useOnlineStatus from "../utils/useOnlineStatus"
 
 const Header = ()=>{
 
-  const {name} = useContext(userContext)
+
 
   const[btnName,setBtnName] = useState("Login")
   const onlineStatus = useOnlineStatus()
@@ -24,7 +24,7 @@ const Header = ()=>{
             <li className="p-3"><Link to={"/about"}>About</Link></li>
             <li className="p-3"><Link to={"/contact"}>Contact</Link></li>
             <li className="p-3"><Link to={"/cart"}>Cart</Link></li>
-            <li className="p-3 font-medium border border-gray-500 rounded-full m-1">{name}🟢</li>
+            {/* <li className="p-3 font-medium border border-gray-500 rounded-full m-1">{name}🟢</li> */}
  
            
             <button className="login bg-slate-300 px-3 rounded-md" onClick={()=> 
