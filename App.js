@@ -1,5 +1,3 @@
-
-
 import React, { lazy,Suspense } from "react";
 import ReactDOM from "react-dom/client"
 import Header from "./src/components/Header";
@@ -34,10 +32,6 @@ import Shimmer from "./src/components/Shimmer";
    //   const root = ReactDOM.createRoot(document.getElementById("root"))
 
    //   root.render(JsxHeading)
-
-    
-
-
           /*
              Header
                - Logo
@@ -100,5 +94,6 @@ import Shimmer from "./src/components/Shimmer";
           root.render(<RouterProvider router = {AppRouter}/>)
 
           
+
 
 

@@ -2,10 +2,6 @@ import RestaurantCard, {withOpenLabel} from "./RestaurantCard"
 import { useState,useEffect } from "react";
 import Shimmer from "./Shimmer";  
 import { Link } from "react-router-dom";
-// import { withOpenLabel } from "./RestaurantCard";
-
-
-   
 
 
 const Body  = ()=>{
